@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-10-15T16:32:29.995Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۳۲",
+    "priceToman": 4094900,
+    "customerQuoteToman": 4550000,
+    "source": "ثبت اولیه و استعلام دیجی‌کالا [data-testid=\"price-final\"]"
+  },
+  {
+    "timestamp": "2026-10-15T16:40:00.000Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۴۰",
+    "priceToman": 4094900,
+    "customerQuoteToman": 4550000,
+    "source": "استعلام مستقیم دیجی‌کالا [data-testid=\"price-final\"]",
+    "changePercent": 0
+  },
+  {
+    "timestamp": "2026-11-09T08:16:25.815Z",
+    "jalaliDate": "۱۴۰۵/۰۸/۱۸",
+    "jalaliTime": "۰۸:۱۶",
+    "priceToman": 3737400,
+    "customerQuoteToman": 4150000,
+    "source": "استعلام مستقیم دیجی‌کالا [data-testid=\"price-final\"]",
+    "changePercent": -8.7
+  }
+]

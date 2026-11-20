@@ -1,0 +1,41 @@
+{
+  "appId": "ir.esteam.pricetracker",
+  "productName": "Esteam Shop Price Tracker",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "electron-dist/**/*",
+    "package.json",
+    "!node_modules/**/*"
+  ],
+  "extraMetadata": {
+    "main": "electron/main.cjs"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "electron/icon.png"
+  },
+  "nsis": {
+    "artifactName": "${productName}-${version}-${arch}-Setup.${ext}",
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "portable": {
+    "artifactName": "${productName}-${version}-${arch}-Portable.${ext}"
+  }
+}

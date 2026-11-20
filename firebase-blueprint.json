@@ -1,0 +1,451 @@
+{
+  "entities": {
+    "SharedShop": {
+      "title": "SharedShop",
+      "description": "Shared computer shop workspace accessible across multiple authorized Google accounts",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "seededDefaults": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "updatedBy": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["id", "name", "seededDefaults", "createdBy", "updatedBy", "createdAt", "updatedAt"]
+    },
+    "SharedProduct": {
+      "title": "SharedProduct",
+      "description": "Tracked computer shop product synced in real time across authorized team emails and devices",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "shopId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "createdBy": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "updatedBy": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "sourceUrl": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "imageUrl": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "currentPriceToman": {
+          "type": "number"
+        },
+        "lastPriceToman": {
+          "type": "number"
+        },
+        "marginPercent": {
+          "type": "number"
+        },
+        "customerQuoteToman": {
+          "type": "number"
+        },
+        "stockStatus": {
+          "type": "string",
+          "enum": ["in_stock", "out_of_stock", "call"]
+        },
+        "warranty": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "barcodes": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        },
+        "lastRefreshedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "shopId",
+        "createdBy",
+        "updatedBy",
+        "name",
+        "category",
+        "sourceUrl",
+        "imageUrl",
+        "currentPriceToman",
+        "lastPriceToman",
+        "marginPercent",
+        "customerQuoteToman",
+        "stockStatus",
+        "warranty",
+        "notes",
+        "lastRefreshedAt",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "SharedPriceHistoryEntry": {
+      "title": "SharedPriceHistoryEntry",
+      "description": "Historical price snapshot for a shared shop product",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "shopId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "productId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "createdBy": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "jalaliDate": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "jalaliTime": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "priceToman": {
+          "type": "number"
+        },
+        "customerQuoteToman": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "changePercent": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "shopId",
+        "productId",
+        "createdBy",
+        "jalaliDate",
+        "jalaliTime",
+        "priceToman",
+        "customerQuoteToman",
+        "source",
+        "changePercent",
+        "createdAt"
+      ]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Legacy personal user profile for one-time migration",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 320
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "seededDefaults": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["uid", "email", "seededDefaults", "createdAt", "updatedAt"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Legacy per-user product record kept for backward-compatible migration",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "ownerId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "sourceUrl": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "imageUrl": {
+          "type": "string",
+          "maxLength": 2048
+        },
+        "currentPriceToman": {
+          "type": "number"
+        },
+        "lastPriceToman": {
+          "type": "number"
+        },
+        "marginPercent": {
+          "type": "number"
+        },
+        "customerQuoteToman": {
+          "type": "number"
+        },
+        "stockStatus": {
+          "type": "string",
+          "enum": ["in_stock", "out_of_stock", "call"]
+        },
+        "warranty": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "barcodes": {
+          "type": "array",
+          "maxItems": 20,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        },
+        "lastRefreshedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "ownerId",
+        "name",
+        "category",
+        "sourceUrl",
+        "imageUrl",
+        "currentPriceToman",
+        "lastPriceToman",
+        "marginPercent",
+        "customerQuoteToman",
+        "stockStatus",
+        "warranty",
+        "notes",
+        "lastRefreshedAt",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "PriceHistoryEntry": {
+      "title": "PriceHistoryEntry",
+      "description": "Legacy per-user historical price snapshot",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "ownerId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "productId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "jalaliDate": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "jalaliTime": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "priceToman": {
+          "type": "number"
+        },
+        "customerQuoteToman": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "changePercent": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "ownerId",
+        "productId",
+        "jalaliDate",
+        "jalaliTime",
+        "priceToman",
+        "customerQuoteToman",
+        "source",
+        "changePercent",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/shops/{shopId}": {
+      "schema": {
+        "$ref": "#/entities/SharedShop"
+      },
+      "description": "Shared shop root document holding seed state"
+    },
+    "/shops/{shopId}/products/{productId}": {
+      "schema": {
+        "$ref": "#/entities/SharedProduct"
+      },
+      "description": "Tracked products in the shared shop synced across authorized Google emails"
+    },
+    "/shops/{shopId}/products/{productId}/history/{historyId}": {
+      "schema": {
+        "$ref": "#/entities/SharedPriceHistoryEntry"
+      },
+      "description": "Immutable price history snapshots for a shared shop product"
+    },
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Legacy user profile and initial seed status"
+    },
+    "/users/{userId}/products/{productId}": {
+      "schema": {
+        "$ref": "#/entities/Product"
+      },
+      "description": "Legacy tracked products belonging to a single user"
+    },
+    "/users/{userId}/products/{productId}/history/{historyId}": {
+      "schema": {
+        "$ref": "#/entities/PriceHistoryEntry"
+      },
+      "description": "Legacy immutable price history snapshots for a user's tracked product"
+    }
+  }
+}

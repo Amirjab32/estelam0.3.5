@@ -1,0 +1,612 @@
+{
+  "version": 1,
+  "exportedAt": "2026-11-17T07:06:25.453Z",
+  "source": "cloudflare-kv",
+  "products": [
+    {
+      "id": "prod_1794762912289",
+      "name": "ماوس رپو مدل N1200 Silent",
+      "category": "ماوس (موشواره)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-2028102%2F%5B%5B17%5D(https%3A%2F%2Fwww.google.com%2Furl%3Fsa%3DE%26q%3Dhttps%253A%252F%252Fvertexaisearch.cloud.google.com%252Fgrounding-api-redirect%252FAUZIYQFnnZYjJypcwseQDgUAWz_J-RYJQaWzW33Gvsuu9K-IP1cnsa3BvNWgkRdXu3tDfHoLeZMEpEO1isrun_YjXlVzDiIl4KW9bDZet-5syFAhmNolfoSU7niiudQNLrYuMDBnFYYhXvqKbYlGj5JgyFZmAXC7w3GsPrJZMxv63LcDDn7clP2GjwMyoW4U3uCOTLoG8_EaeD_jL7_8KSnXH8yitlY4Unw2ASdsYOtYy2s%253D)%5D",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/cd088c54441c06371b9f32c119476cadfdd03bc7_1704525849.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 1290000,
+      "lastPriceToman": 1290000,
+      "marginPercent": 8,
+      "customerQuoteToman": 1393000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:18.751Z",
+      "createdAt": "2026-11-15T17:15:12.289Z",
+      "updatedAt": "2026-11-17T07:06:18.751Z",
+      "notes": "",
+      "barcodes": [
+        "7908414489844"
+      ]
+    },
+    {
+      "id": "prod_1794762887091",
+      "name": "ماوس مخصوص بازی لایماید مدل V7 کد 2024",
+      "category": "ماوس (موشواره)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-15557165%2F%5B%5B3%5D(https%3A%2F%2Fwww.google.com%2Furl%3Fsa%3DE%26q%3Dhttps%253A%252F%252Fvertexaisearch.cloud.google.com%252Fgrounding-api-redirect%252FAUZIYQGsp3ddaXTZR14zEJpnpL2n7z6_8DC545pboJacYDIAEV35gkaRxrhrjKDv-TIkaUY7CCAApBrgKQ1YuLKZmWxlWSy2OZ9tTa2xfOpVBTxkQZaAY9MgVi2kYytr3KYuKbacRwgmL-Djnb5tBwU_nFVoClkON-TkfVA2qkX5wB1LUbxVznjVgZFMwreceJEHLiv9CKn3HQnIq5JXx3wVl1TahbppKEsOmtYYG7QQaTSHtPU3T8k-4wmkgiHh56-ws126NstSBhxOjMdWJsfT_Men2q027mHiQZEg22wQpO9qjFob4cHVlFkpxgFBmuhP_UuxLt9uI2spZselHMFmV2HYvNqWp9J9x4Y%253D)%5D",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/07d6bab2877a8f910dd597fc7dcacf1a7e29a5e3_1717829207.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 1990000,
+      "lastPriceToman": 1990000,
+      "marginPercent": 8,
+      "customerQuoteToman": 2149000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:19.100Z",
+      "createdAt": "2026-11-15T17:14:47.091Z",
+      "updatedAt": "2026-11-17T07:06:19.100Z",
+      "notes": "",
+      "barcodes": [
+        "6980996100011"
+      ]
+    },
+    {
+      "id": "prod_1794758256365",
+      "name": "کیبورد تسکو مدل TK 8046،سوییچ ممبران، Full-size، نورپردازی RGB",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-17846850%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/650dada600f78d4e8c940b89580f0b93fe135867_1735541035.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 2826900,
+      "lastPriceToman": 2826900,
+      "marginPercent": 8,
+      "customerQuoteToman": 3053000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:19.436Z",
+      "createdAt": "2026-11-15T15:57:36.365Z",
+      "updatedAt": "2026-11-17T07:06:19.436Z",
+      "notes": "",
+      "barcodes": [
+        "6973058365923",
+        "258046341002322"
+      ]
+    },
+    {
+      "id": "prod_1794758157967",
+      "name": "قاب اکسترنال اس اس دی M.2 رویال مدل ET-M2 NGFF M2",
+      "category": "لوازم جانبی تجهیزات ذخیره سازی",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-14424872%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/c3dca222e3b1544492c4ff997ab0fff2adafb618_1707915968.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 1890000,
+      "lastPriceToman": 1890000,
+      "marginPercent": 8,
+      "customerQuoteToman": 2041000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:19.751Z",
+      "createdAt": "2026-11-15T15:55:57.967Z",
+      "updatedAt": "2026-11-17T07:06:19.751Z",
+      "notes": "",
+      "barcodes": [
+        "50469"
+      ]
+    },
+    {
+      "id": "prod_1794758112364",
+      "name": "ماوس و کیبورد بی سیم تسکو مدل TKM 7029W",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-19977570%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/9bad82c6d7b31a4a7e22cba8356f6a815bd60950_1753710821.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 3855500,
+      "lastPriceToman": 3855500,
+      "marginPercent": 8,
+      "customerQuoteToman": 4164000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:20.203Z",
+      "createdAt": "2026-11-15T15:55:12.364Z",
+      "updatedAt": "2026-11-17T07:06:20.203Z",
+      "notes": "",
+      "barcodes": [
+        "6973058367576",
+        "257029707001389"
+      ]
+    },
+    {
+      "id": "prod_1794758064284",
+      "name": "کیبورد بی سیم تسکو مدل TK 7007W",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-19977410%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/54f1b1378f5142f08ec418d46db65bd4e8208300_1786296591.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 2866600,
+      "lastPriceToman": 2866600,
+      "marginPercent": 8,
+      "customerQuoteToman": 3096000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:20.557Z",
+      "createdAt": "2026-11-15T15:54:24.284Z",
+      "updatedAt": "2026-11-17T07:06:20.557Z",
+      "notes": "",
+      "barcodes": [
+        "257007434003823"
+      ]
+    },
+    {
+      "id": "prod_1794758020684",
+      "name": "کیبورد بی سیم تسکو مدل TKM7106W همراه با موس بی‌سیم",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-138215%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/905752c8b927a8d21e644369c9cc4aa84c799373_1753698357.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 6149300,
+      "lastPriceToman": 6149300,
+      "marginPercent": 8,
+      "customerQuoteToman": 6641000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:20.927Z",
+      "createdAt": "2026-11-15T15:53:40.684Z",
+      "updatedAt": "2026-11-17T07:06:20.927Z",
+      "notes": "",
+      "barcodes": [
+        "247106117002359"
+      ]
+    },
+    {
+      "id": "prod_1794758011716",
+      "name": "کیبورد تسکو مدل TK 8072",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-18572203%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/c111257b04a44745a08437e21f773802e2ae786c_1786296586.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 2640000,
+      "lastPriceToman": 2640000,
+      "marginPercent": 8,
+      "customerQuoteToman": 2851000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:21.245Z",
+      "createdAt": "2026-11-15T15:53:31.716Z",
+      "updatedAt": "2026-11-17T07:06:21.245Z",
+      "notes": "",
+      "barcodes": [
+        "6973058365978"
+      ]
+    },
+    {
+      "id": "prod_1794757985278",
+      "name": "دسته بازی مچر مدل MR-58 بسته 2 عددی",
+      "category": "دسته بازی",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-3449424%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/7d1c68cab3db85a34cfdd76ba6a23ed6b6998879_1786388704.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 1500000,
+      "lastPriceToman": 1500000,
+      "marginPercent": 8,
+      "customerQuoteToman": 1620000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:21.723Z",
+      "createdAt": "2026-11-15T15:53:05.278Z",
+      "updatedAt": "2026-11-17T07:06:21.723Z",
+      "notes": "",
+      "barcodes": [
+        "2905681700028"
+      ]
+    },
+    {
+      "id": "prod_1794757977502",
+      "name": "براکت هارد اینترنال ونتولینک مدل Caddy 12.7mm",
+      "category": "لوازم جانبی قطعات کامپیوتر",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-17513529%2F%5B%5B17%5D(https%3A%2F%2Fwww.google.com%2Furl%3Fsa%3DE%26q%3Dhttps%253A%252F%252Fvertexaisearch.cloud.google.com%252Fgrounding-api-redirect%252FAUZIYQGnjWYPbO6lXcrf8JNgcrp7_-bE__lC1kfscaSj3pxwDRCbbhMW0wSbwkOWG8ut7CKRuIORc0fqx3XHSm0SizBeAVZRCjmgEW9Vp94gYjF11X0mVrdNJ4Tz_NjJ4h0s5JzvsdEz41ZPHPP06qry4se1sH48jPnYtF1Uey5_gc5rie9UO10UkCEzjmyN9oVxv0LXY4VSwGr8PBIY6ptyaJGObWsE3S2N8P24cooin0ggIYenaXFaes_zfIkvWm3U0s4IRkyKSO8sRhX8NhzzWF256-mYJvAAeAlbgzg2lVjKL4cV33Fwoh8qgHwIE652srt6-LhR6e_xnEcqoc60dks-cItaosMkRITmc9HKmx2LxvDJLdn9rx6LJ8jjXGs%253D)%5D",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/5afaef7ee591298edb755289a914256337f0caa5_1732539546.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 410000,
+      "lastPriceToman": 410000,
+      "marginPercent": 8,
+      "customerQuoteToman": 443000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:22.349Z",
+      "createdAt": "2026-11-15T15:52:57.502Z",
+      "updatedAt": "2026-11-17T07:06:22.349Z",
+      "notes": "",
+      "barcodes": [
+        "(22)22",
+        "(22)23"
+      ]
+    },
+    {
+      "id": "prod_1794757961077",
+      "name": "ماوس بی سیم ریزیو مدل R10",
+      "category": "ماوس (موشواره)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-20724642%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/8ca5a479cf170f679c9901f9b4f08c9dc9faeff5_1760954772.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 2100000,
+      "lastPriceToman": 2100000,
+      "marginPercent": 8,
+      "customerQuoteToman": 2268000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:22.790Z",
+      "createdAt": "2026-11-15T15:52:41.077Z",
+      "updatedAt": "2026-11-17T07:06:22.790Z",
+      "notes": "",
+      "barcodes": [
+        "6976020360254"
+      ]
+    },
+    {
+      "id": "prod_1794757952725",
+      "name": "ماوس بی سیم پی نت مدل Z.2",
+      "category": "ماوس (موشواره)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-18796028%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/a720e58cded995adf7e92616e9ab95ce89d1ed1f_1743776496.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 640000,
+      "lastPriceToman": 640000,
+      "marginPercent": 8,
+      "customerQuoteToman": 691000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:23.179Z",
+      "createdAt": "2026-11-15T15:52:32.725Z",
+      "updatedAt": "2026-11-17T07:06:23.179Z",
+      "notes": "",
+      "barcodes": [
+        "2900631200214"
+      ]
+    },
+    {
+      "id": "prod_1794756987579",
+      "name": "صفحه کلید عددی  مدل Mini WNK-2.4",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-5557400%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/863aec1def4b61b709eba2257951db45012eef05_1624348083.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 1680000,
+      "lastPriceToman": 1680000,
+      "marginPercent": 8,
+      "customerQuoteToman": 1814000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:23.656Z",
+      "createdAt": "2026-11-15T15:36:27.579Z",
+      "updatedAt": "2026-11-17T07:06:23.656Z",
+      "notes": "",
+      "barcodes": []
+    },
+    {
+      "id": "prod_1794756977698",
+      "name": "اسپیکر دسکتاپ ایکس فورتک مدل X-S4",
+      "category": "اسپیکر (بلندگو)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-18400696%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/836b27d700372ed9b50d258c93760325c2237b3b_1740212200.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 1500000,
+      "lastPriceToman": 1500000,
+      "marginPercent": 8,
+      "customerQuoteToman": 1620000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:23.979Z",
+      "createdAt": "2026-11-15T15:36:17.698Z",
+      "updatedAt": "2026-11-17T07:06:23.979Z",
+      "notes": "",
+      "barcodes": []
+    },
+    {
+      "id": "prod_1794756966154",
+      "name": "ماوس بی سیم تسکو مدل TM 780W",
+      "category": "ماوس (موشواره)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-19769142%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/56dd42adbbee89b37e9865c629c5a8ffab617146_1752141223.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 2872200,
+      "lastPriceToman": 2872200,
+      "marginPercent": 8,
+      "customerQuoteToman": 3102000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:24.420Z",
+      "createdAt": "2026-11-15T15:36:06.154Z",
+      "updatedAt": "2026-11-17T07:06:24.420Z",
+      "notes": "",
+      "barcodes": [
+        "6973058365527",
+        "SN:240780117000721"
+      ]
+    },
+    {
+      "id": "prod_1794756955593",
+      "name": "ماوس بی سیم تسکو مدل TM 795W",
+      "category": "ماوس (موشواره)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-19769009%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/cb7b28b7b92c52b91706c6d92e4b8356e37b16ea_1786388232.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 4875400,
+      "lastPriceToman": 4875400,
+      "marginPercent": 8,
+      "customerQuoteToman": 5265000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:24.850Z",
+      "createdAt": "2026-11-15T15:35:55.593Z",
+      "updatedAt": "2026-11-17T07:06:24.850Z",
+      "notes": "",
+      "barcodes": [
+        "6973058365329"
+      ]
+    },
+    {
+      "id": "prod_1794756943259",
+      "name": "هدست مخصوص بازی تسکو مدل TH 5127",
+      "category": "هدفون، هدست و هندزفری",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-2120092%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/e15a4b60c94a2b61fd005a2fb9b1d01e61b34801_1754242110.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 3680600,
+      "lastPriceToman": 3680600,
+      "marginPercent": 8,
+      "customerQuoteToman": 3975000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:25.329Z",
+      "createdAt": "2026-11-15T15:35:43.259Z",
+      "updatedAt": "2026-11-17T07:06:25.329Z",
+      "notes": "",
+      "barcodes": [
+        "245127107000582",
+        "6266559307067"
+      ]
+    },
+    {
+      "id": "prod_1794756931539",
+      "name": "کیبورد مخصوص بازی پی نت مدل KB1700",
+      "category": "کیبورد (صفحه کلید)",
+      "sourceUrl": "https://www.google.com/url?sa=E&q=https%3A%2F%2Fwww.digikala.com%2Fproduct%2Fdkp-17261797%2F",
+      "imageUrl": "https://dkstatics-public.digikala.com/digikala-products/17cd70d4f642755aa1ef2d0f89d3202851c8e77b_1730808456.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "currentPriceToman": 2874000,
+      "lastPriceToman": 2874000,
+      "marginPercent": 8,
+      "customerQuoteToman": 3104000,
+      "stockStatus": "in_stock",
+      "warranty": "",
+      "lastRefreshedAt": "2026-11-17T07:06:25.676Z",
+      "createdAt": "2026-11-15T15:35:31.539Z",
+      "updatedAt": "2026-11-17T07:06:25.676Z",
+      "notes": "",
+      "barcodes": [
+        "2800007383872"
+      ]
+    }
+  ],
+  "histories": {
+    "prod_1794762912289": [
+      {
+        "timestamp": "2026-11-15T17:15:12.289Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۲۰:۴۵",
+        "priceToman": 1290000,
+        "customerQuoteToman": 1393000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794762887091": [
+      {
+        "timestamp": "2026-11-15T17:14:47.091Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۲۰:۴۴",
+        "priceToman": 1990000,
+        "customerQuoteToman": 2149000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794758256365": [
+      {
+        "timestamp": "2026-11-15T15:57:36.365Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۷",
+        "priceToman": 2826900,
+        "customerQuoteToman": 3053000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794758157967": [
+      {
+        "timestamp": "2026-11-15T15:55:57.967Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۵",
+        "priceToman": 1890000,
+        "customerQuoteToman": 2041000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794758112364": [
+      {
+        "timestamp": "2026-11-15T15:55:12.364Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۵",
+        "priceToman": 3855500,
+        "customerQuoteToman": 4164000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794758064284": [
+      {
+        "timestamp": "2026-11-15T15:54:24.284Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۴",
+        "priceToman": 2866600,
+        "customerQuoteToman": 3096000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794758020684": [
+      {
+        "timestamp": "2026-11-15T15:53:40.684Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۳",
+        "priceToman": 5437500,
+        "customerQuoteToman": 5873000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      },
+      {
+        "timestamp": "2026-11-17T06:00:02.335Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۶",
+        "jalaliTime": "۰۶:۰۰",
+        "priceToman": 6149300,
+        "customerQuoteToman": 6641000,
+        "source": "پایش خودکار ۳ ساعته",
+        "changePercent": 13.1
+      }
+    ],
+    "prod_1794758011716": [
+      {
+        "timestamp": "2026-11-15T15:53:31.716Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۳",
+        "priceToman": 2400000,
+        "customerQuoteToman": 2592000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      },
+      {
+        "timestamp": "2026-11-17T06:00:02.335Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۶",
+        "jalaliTime": "۰۶:۰۰",
+        "priceToman": 2640000,
+        "customerQuoteToman": 2851000,
+        "source": "پایش خودکار ۳ ساعته",
+        "changePercent": 10
+      }
+    ],
+    "prod_1794757985278": [
+      {
+        "timestamp": "2026-11-15T15:53:05.278Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۳",
+        "priceToman": 1500000,
+        "customerQuoteToman": 1620000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794757977502": [
+      {
+        "timestamp": "2026-11-15T15:52:57.502Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۲",
+        "priceToman": 410000,
+        "customerQuoteToman": 443000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794757961077": [
+      {
+        "timestamp": "2026-11-15T15:52:41.077Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۲",
+        "priceToman": 2100000,
+        "customerQuoteToman": 2268000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794757952725": [
+      {
+        "timestamp": "2026-11-15T15:52:32.725Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۲۲",
+        "priceToman": 640000,
+        "customerQuoteToman": 691000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794756987579": [
+      {
+        "timestamp": "2026-11-15T15:36:27.579Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۰۶",
+        "priceToman": 1680000,
+        "customerQuoteToman": 1814000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794756977698": [
+      {
+        "timestamp": "2026-11-15T15:36:17.698Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۰۶",
+        "priceToman": 1500000,
+        "customerQuoteToman": 1620000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794756966154": [
+      {
+        "timestamp": "2026-11-15T15:36:06.154Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۰۶",
+        "priceToman": 2872200,
+        "customerQuoteToman": 3102000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794756955593": [
+      {
+        "timestamp": "2026-11-15T15:35:55.593Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۰۵",
+        "priceToman": 4875400,
+        "customerQuoteToman": 5265000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794756943259": [
+      {
+        "timestamp": "2026-11-15T15:35:43.259Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۰۵",
+        "priceToman": 3680600,
+        "customerQuoteToman": 3975000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ],
+    "prod_1794756931539": [
+      {
+        "timestamp": "2026-11-15T15:35:31.539Z",
+        "jalaliDate": "۱۴۰۵/۰۸/۲۴",
+        "jalaliTime": "۱۹:۰۵",
+        "priceToman": 2874000,
+        "customerQuoteToman": 3104000,
+        "source": "ثبت اولیه در کلادفلر KV",
+        "changePercent": 0
+      }
+    ]
+  },
+  "deletedIds": {
+    "prod_t2_gaming_mouse": "2026-11-14T14:05:34.048Z",
+    "prod_lenovo_ideapad_1": "2026-11-14T14:05:35.922Z",
+    "prod_1794662494370": "2026-11-14T13:23:04.584Z",
+    "prod_1794662304483": "2026-11-14T15:52:56.753Z",
+    "prod_1794665730891": "2026-11-14T15:52:59.590Z",
+    "prod_1794675099536": "2026-11-15T15:35:05.162Z",
+    "prod_1794671741217": "2026-11-15T15:35:06.889Z",
+    "prod_1794671633990": "2026-11-15T15:35:08.361Z",
+    "prod_1794671701945": "2026-11-15T15:35:09.617Z",
+    "prod_1794671799255": "2026-11-15T15:35:11.658Z",
+    "prod_1794758146797": "2026-11-15T15:56:42.899Z",
+    "prod_1794758272372": "2026-11-15T15:58:49.042Z",
+    "prod_1794758263628": "2026-11-15T15:58:50.682Z",
+    "prod_1794758288451": "2026-11-15T15:58:52.418Z",
+    "prod_1794757000809": "2026-11-15T16:02:40.862Z",
+    "prod_1794757930703": "2026-11-15T16:03:37.060Z",
+    "prod_1794757970767": "2026-11-15T16:06:42.190Z",
+    "prod_1794757993140": "2026-11-15T16:07:57.023Z",
+    "prod_1794757014017": "2026-11-15T16:12:59.212Z",
+    "prod_1794825612458": "2026-11-16T10:44:22.276Z",
+    "prod_1794826418266_442287": "2026-11-16T11:28:40.198Z",
+    "prod_1794826417106_11706240": "2026-11-16T11:28:42.906Z",
+    "prod_1794826418922_20881827": "2026-11-16T11:28:58.745Z",
+    "prod_1794826419538_8522486": "2026-11-16T11:29:01.020Z"
+  }
+}

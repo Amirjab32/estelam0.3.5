@@ -1,0 +1,309 @@
+[
+  {
+    "timestamp": "2026-10-15T16:17:52.246Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۱۷",
+    "priceToman": 3450000,
+    "customerQuoteToman": 3865000,
+    "source": "ثبت اولیه"
+  },
+  {
+    "timestamp": "2026-10-15T16:18:17.114Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۱۸",
+    "priceToman": 3535000,
+    "customerQuoteToman": 3960000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:14.283Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3560000,
+    "customerQuoteToman": 4095000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:15.591Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3660000,
+    "customerQuoteToman": 4210000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:16.733Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3745000,
+    "customerQuoteToman": 4310000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:17.842Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3750000,
+    "customerQuoteToman": 4315000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:18.768Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3685000,
+    "customerQuoteToman": 4240000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:19.741Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3755000,
+    "customerQuoteToman": 4320000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:20.672Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3865000,
+    "customerQuoteToman": 4445000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:21.525Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3825000,
+    "customerQuoteToman": 4400000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:22.356Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3810000,
+    "customerQuoteToman": 4385000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:23.119Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3740000,
+    "customerQuoteToman": 4305000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:25.231Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3780000,
+    "customerQuoteToman": 4350000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:26.279Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3800000,
+    "customerQuoteToman": 4370000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:27.128Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 3895000,
+    "customerQuoteToman": 4480000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:22:27.963Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۲",
+    "priceToman": 4020000,
+    "customerQuoteToman": 4625000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:26.133Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4120000,
+    "customerQuoteToman": 4615000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:27.085Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4205000,
+    "customerQuoteToman": 4710000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:28.036Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4290000,
+    "customerQuoteToman": 4805000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:29.030Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4250000,
+    "customerQuoteToman": 4760000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:29.783Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4280000,
+    "customerQuoteToman": 4795000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:30.725Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4400000,
+    "customerQuoteToman": 4930000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:31.484Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4465000,
+    "customerQuoteToman": 5005000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:32.172Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4585000,
+    "customerQuoteToman": 5140000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:32.505Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4600000,
+    "customerQuoteToman": 5155000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:33.041Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4705000,
+    "customerQuoteToman": 5270000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:33.562Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4860000,
+    "customerQuoteToman": 5445000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:33.894Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4810000,
+    "customerQuoteToman": 5390000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:34.253Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4885000,
+    "customerQuoteToman": 5475000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:34.635Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4790000,
+    "customerQuoteToman": 5365000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:34.997Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4860000,
+    "customerQuoteToman": 5445000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:35.415Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 4930000,
+    "customerQuoteToman": 5525000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:35.806Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 5100000,
+    "customerQuoteToman": 5715000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:25:36.102Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۵",
+    "priceToman": 5245000,
+    "customerQuoteToman": 5875000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-10-15T16:26:50.288Z",
+    "jalaliDate": "۱۴۰۵/۰۷/۲۳",
+    "jalaliTime": "۱۶:۲۶",
+    "priceToman": 5220000,
+    "customerQuoteToman": 5850000,
+    "source": "بروزرسانی دستی مغازه"
+  },
+  {
+    "timestamp": "2026-11-09T08:16:13.816Z",
+    "jalaliDate": "۱۴۰۵/۰۸/۱۸",
+    "jalaliTime": "۰۸:۱۶",
+    "priceToman": 3737400,
+    "customerQuoteToman": 4190000,
+    "source": "استعلام مستقیم دیجی‌کالا [data-testid=\"price-final\"]",
+    "changePercent": -28.4
+  },
+  {
+    "timestamp": "2026-11-09T08:35:45.822Z",
+    "jalaliDate": "۱۴۰۵/۰۸/۱۸",
+    "jalaliTime": "۰۸:۳۵",
+    "priceToman": 4875400,
+    "customerQuoteToman": 5465000,
+    "source": "استعلام قیمت اصلی و بدون تخفیف دیجی‌کالا [data-testid=\"price-no-discount\"]",
+    "changePercent": 30.4
+  },
+  {
+    "timestamp": "2026-11-09T08:39:04.541Z",
+    "jalaliDate": "۱۴۰۵/۰۸/۱۸",
+    "jalaliTime": "۰۸:۳۹",
+    "priceToman": 5119170,
+    "customerQuoteToman": 5735000,
+    "source": "شبیه‌سازی تغییر قیمت در سایت مرجع (آزمون صحت عملکرد)",
+    "changePercent": 5
+  }
+]

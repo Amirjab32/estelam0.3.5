@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "estelam-005",
+  "compatibility_date": "2026-11-14",
+  "pages_build_output_dir": "./dist",
+  "kv_namespaces": [
+    {
+      "binding": "SHOP_KV",
+      "id": "88f503c4afc64199b29ed32ad68de0e8"
+    }
+  ],
+  "env": {
+    "preview": {
+      "kv_namespaces": [
+        {
+          "binding": "SHOP_KV",
+          "id": "88f503c4afc64199b29ed32ad68de0e8"
+        }
+      ]
+    }
+  }
+}

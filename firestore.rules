@@ -1,0 +1,487 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Core helper primitives
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidBarcodeList(listVal) {
+      return listVal is list
+        && listVal.size() <= 20
+        && (listVal.size() == 0 || (listVal[0] is string && listVal[0].size() >= 1 && listVal[0].size() <= 120));
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    // لیست ایمیل‌های گوگل مجاز برای دسترسی به فروشگاه مشترک (همه حروف با حروف کوچک وارد شوند)
+    // ایمیل‌های دوم و سوم خود را به آرایه زیر اضافه کنید، مثلاً:
+    // 'gholamjabb@gmail.com', 'your.second.email@gmail.com'
+    function isAuthorizedShopMember() {
+      return isVerifiedUser()
+        && request.auth.token.email is string
+        && request.auth.token.email.lower() in [
+          'gholamjabb@gmail.com',
+          'ghfagir@gmail.com'
+        ];
+    }
+
+    function isOwner(userId) {
+      return isVerifiedUser() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isVerifiedUser() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        (request.auth.token.email is string && request.auth.token.email.lower() in [
+          'gholamjabb@gmail.com',
+          'ghfagir@gmail.com'
+        ])
+      );
+    }
+
+    // Validation blueprint: SharedShop
+    function isValidSharedShop(data, shopId) {
+      return data.keys().hasAll([
+          'id', 'name', 'seededDefaults', 'createdBy', 'updatedBy', 'createdAt', 'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'id', 'name', 'seededDefaults', 'createdBy', 'updatedBy', 'createdAt', 'updatedAt'
+        ])
+        && isValidId(data.id)
+        && data.id == shopId
+        && data.name is string
+        && data.name.size() >= 1
+        && data.name.size() <= 200
+        && data.seededDefaults is bool
+        && isValidId(data.createdBy)
+        && isValidId(data.updatedBy)
+        && data.updatedBy == request.auth.uid
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    // Validation blueprint: SharedProduct
+    function isValidSharedProduct(data, shopId, productId) {
+      return data.keys().hasAll([
+          'id', 'shopId', 'createdBy', 'updatedBy', 'name', 'category', 'sourceUrl', 'imageUrl',
+          'currentPriceToman', 'lastPriceToman', 'marginPercent', 'customerQuoteToman',
+          'stockStatus', 'warranty', 'notes', 'lastRefreshedAt', 'createdAt', 'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'id', 'shopId', 'createdBy', 'updatedBy', 'name', 'category', 'sourceUrl', 'imageUrl',
+          'currentPriceToman', 'lastPriceToman', 'marginPercent', 'customerQuoteToman',
+          'stockStatus', 'warranty', 'notes', 'barcodes', 'lastRefreshedAt', 'createdAt', 'updatedAt'
+        ])
+        && isValidId(data.id)
+        && data.id == productId
+        && isValidId(data.shopId)
+        && data.shopId == shopId
+        && isValidId(data.createdBy)
+        && isValidId(data.updatedBy)
+        && data.updatedBy == request.auth.uid
+        && data.name is string
+        && data.name.size() >= 1
+        && data.name.size() <= 500
+        && data.category is string
+        && data.category.size() >= 1
+        && data.category.size() <= 120
+        && data.sourceUrl is string
+        && data.sourceUrl.size() <= 2048
+        && data.imageUrl is string
+        && data.imageUrl.size() <= 2048
+        && data.currentPriceToman is number
+        && data.currentPriceToman >= 0
+        && data.lastPriceToman is number
+        && data.lastPriceToman >= 0
+        && data.marginPercent is number
+        && data.marginPercent >= 0
+        && data.marginPercent <= 500
+        && data.customerQuoteToman is number
+        && data.customerQuoteToman >= 0
+        && data.stockStatus is string
+        && data.stockStatus.size() <= 32
+        && data.stockStatus in ['in_stock', 'out_of_stock', 'call']
+        && data.warranty is string
+        && data.warranty.size() <= 200
+        && data.notes is string
+        && data.notes.size() <= 1000
+        && (!('barcodes' in data) || isValidBarcodeList(data.barcodes))
+        && data.lastRefreshedAt is timestamp
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    // Validation blueprint: SharedPriceHistoryEntry
+    function isValidSharedPriceHistory(data, shopId, productId, historyId) {
+      return data.keys().hasAll([
+          'id', 'shopId', 'productId', 'createdBy', 'jalaliDate', 'jalaliTime',
+          'priceToman', 'customerQuoteToman', 'source', 'changePercent', 'createdAt'
+        ])
+        && data.keys().hasOnly([
+          'id', 'shopId', 'productId', 'createdBy', 'jalaliDate', 'jalaliTime',
+          'priceToman', 'customerQuoteToman', 'source', 'changePercent', 'createdAt'
+        ])
+        && isValidId(data.id)
+        && data.id == historyId
+        && isValidId(data.shopId)
+        && data.shopId == shopId
+        && isValidId(data.productId)
+        && data.productId == productId
+        && isValidId(data.createdBy)
+        && data.createdBy == request.auth.uid
+        && data.jalaliDate is string
+        && data.jalaliDate.size() >= 1
+        && data.jalaliDate.size() <= 32
+        && data.jalaliTime is string
+        && data.jalaliTime.size() >= 1
+        && data.jalaliTime.size() <= 32
+        && data.priceToman is number
+        && data.priceToman >= 0
+        && data.customerQuoteToman is number
+        && data.customerQuoteToman >= 0
+        && data.source is string
+        && data.source.size() >= 1
+        && data.source.size() <= 300
+        && data.changePercent is number
+        && data.createdAt is timestamp;
+    }
+
+    // Legacy validation blueprint: UserProfile
+    function isValidUserProfile(data, userId) {
+      return data.keys().hasAll(['uid', 'email', 'seededDefaults', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['uid', 'email', 'displayName', 'seededDefaults', 'createdAt', 'updatedAt'])
+        && data.uid is string
+        && isValidId(data.uid)
+        && data.uid == userId
+        && data.email is string
+        && data.email.size() <= 320
+        && (!('displayName' in data) || (data.displayName is string && data.displayName.size() <= 120))
+        && data.seededDefaults is bool
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    // Legacy validation blueprint: Product
+    function isValidProduct(data, userId, productId) {
+      return data.keys().hasAll([
+          'id', 'ownerId', 'name', 'category', 'sourceUrl', 'imageUrl',
+          'currentPriceToman', 'lastPriceToman', 'marginPercent', 'customerQuoteToman',
+          'stockStatus', 'warranty', 'notes', 'lastRefreshedAt', 'createdAt', 'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'id', 'ownerId', 'name', 'category', 'sourceUrl', 'imageUrl',
+          'currentPriceToman', 'lastPriceToman', 'marginPercent', 'customerQuoteToman',
+          'stockStatus', 'warranty', 'notes', 'barcodes', 'lastRefreshedAt', 'createdAt', 'updatedAt'
+        ])
+        && isValidId(data.id)
+        && data.id == productId
+        && isValidId(data.ownerId)
+        && data.ownerId == userId
+        && data.name is string
+        && data.name.size() >= 1
+        && data.name.size() <= 500
+        && data.category is string
+        && data.category.size() >= 1
+        && data.category.size() <= 120
+        && data.sourceUrl is string
+        && data.sourceUrl.size() <= 2048
+        && data.imageUrl is string
+        && data.imageUrl.size() <= 2048
+        && data.currentPriceToman is number
+        && data.currentPriceToman >= 0
+        && data.lastPriceToman is number
+        && data.lastPriceToman >= 0
+        && data.marginPercent is number
+        && data.marginPercent >= 0
+        && data.marginPercent <= 500
+        && data.customerQuoteToman is number
+        && data.customerQuoteToman >= 0
+        && data.stockStatus is string
+        && data.stockStatus.size() <= 32
+        && data.stockStatus in ['in_stock', 'out_of_stock', 'call']
+        && data.warranty is string
+        && data.warranty.size() <= 200
+        && data.notes is string
+        && data.notes.size() <= 1000
+        && (!('barcodes' in data) || isValidBarcodeList(data.barcodes))
+        && data.lastRefreshedAt is timestamp
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    // Legacy validation blueprint: PriceHistoryEntry
+    function isValidPriceHistory(data, userId, productId, historyId) {
+      return data.keys().hasAll([
+          'id', 'ownerId', 'productId', 'jalaliDate', 'jalaliTime',
+          'priceToman', 'customerQuoteToman', 'source', 'changePercent', 'createdAt'
+        ])
+        && data.keys().hasOnly([
+          'id', 'ownerId', 'productId', 'jalaliDate', 'jalaliTime',
+          'priceToman', 'customerQuoteToman', 'source', 'changePercent', 'createdAt'
+        ])
+        && isValidId(data.id)
+        && data.id == historyId
+        && isValidId(data.ownerId)
+        && data.ownerId == userId
+        && isValidId(data.productId)
+        && data.productId == productId
+        && data.jalaliDate is string
+        && data.jalaliDate.size() >= 1
+        && data.jalaliDate.size() <= 32
+        && data.jalaliTime is string
+        && data.jalaliTime.size() >= 1
+        && data.jalaliTime.size() <= 32
+        && data.priceToman is number
+        && data.priceToman >= 0
+        && data.customerQuoteToman is number
+        && data.customerQuoteToman >= 0
+        && data.source is string
+        && data.source.size() >= 1
+        && data.source.size() <= 300
+        && data.changePercent is number
+        && data.createdAt is timestamp;
+    }
+
+    // Admins collection (read-only by admins)
+    match /admins/{adminId} {
+      allow get: if isValidId(adminId) && isOwner(adminId);
+      allow list, write: if false;
+    }
+
+    // Connectivity probe document
+    match /test/connection {
+      allow get: if isVerifiedUser();
+      allow list, write: if false;
+    }
+
+    // Shared multi-account shop workspace (e.g., /shops/main-shop)
+    match /shops/{shopId} {
+      allow get: if isValidId(shopId) && isAuthorizedShopMember();
+      allow list: if false;
+      allow create: if isValidId(shopId)
+        && isAuthorizedShopMember()
+        && isValidSharedShop(incoming(), shopId)
+        && incoming().createdBy == request.auth.uid
+        && incoming().updatedBy == request.auth.uid
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isValidId(shopId)
+        && isAuthorizedShopMember()
+        && isValidSharedShop(incoming(), shopId)
+        && incoming().id == existing().id
+        && incoming().createdBy == existing().createdBy
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedBy == request.auth.uid
+        && incoming().updatedAt == request.time
+        && incoming().diff(existing()).affectedKeys().hasOnly([
+          'name', 'seededDefaults', 'updatedBy', 'updatedAt'
+        ]);
+      allow delete: if false;
+
+      // Shared tracked products accessible to all authorized shop Google emails
+      match /products/{productId} {
+        allow get: if isValidId(shopId) && isValidId(productId) && isAuthorizedShopMember();
+        allow list: if isAuthorizedShopMember() && existing().shopId == shopId;
+        allow create: if isValidId(shopId)
+          && isValidId(productId)
+          && isAuthorizedShopMember()
+          && isValidSharedProduct(incoming(), shopId, productId)
+          && incoming().createdBy == request.auth.uid
+          && incoming().updatedBy == request.auth.uid
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time
+          && incoming().lastRefreshedAt == request.time
+          && (
+            exists(/databases/$(database)/documents/shops/$(shopId)) ||
+            existsAfter(/databases/$(database)/documents/shops/$(shopId))
+          );
+        allow update: if isValidId(shopId)
+          && isValidId(productId)
+          && isAuthorizedShopMember()
+          && isValidSharedProduct(incoming(), shopId, productId)
+          && incoming().id == existing().id
+          && incoming().shopId == existing().shopId
+          && incoming().createdBy == existing().createdBy
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedBy == request.auth.uid
+          && incoming().updatedAt == request.time
+          && (
+            // Action 1: Live price sync refresh by any authorized team member
+            (
+              incoming().lastRefreshedAt == request.time
+              && incoming().diff(existing()).affectedKeys().hasOnly([
+                'name', 'category', 'imageUrl', 'currentPriceToman', 'lastPriceToman',
+                'customerQuoteToman', 'stockStatus', 'lastRefreshedAt', 'updatedBy', 'updatedAt'
+              ])
+            ) ||
+            // Action 2: Edit margin, barcodes, or product details by any authorized team member
+            (
+              incoming().diff(existing()).affectedKeys().hasOnly([
+                'name', 'category', 'marginPercent', 'customerQuoteToman', 'notes', 'barcodes', 'updatedBy', 'updatedAt'
+              ])
+            ) ||
+            // Action 3: Full cloud sync or JSON backup merge update
+            (
+              incoming().lastRefreshedAt == request.time
+              && incoming().diff(existing()).affectedKeys().hasOnly([
+                'name', 'category', 'sourceUrl', 'imageUrl', 'currentPriceToman', 'lastPriceToman',
+                'marginPercent', 'customerQuoteToman', 'stockStatus', 'warranty', 'notes', 'barcodes',
+                'lastRefreshedAt', 'updatedBy', 'updatedAt'
+              ])
+            )
+          );
+        allow delete: if isValidId(shopId) && isValidId(productId) && isAuthorizedShopMember();
+
+        // Immutable price history snapshots for a shared shop product
+        match /history/{historyId} {
+          allow get: if isValidId(shopId)
+            && isValidId(productId)
+            && isValidId(historyId)
+            && isAuthorizedShopMember();
+          allow list: if isAuthorizedShopMember()
+            && existing().shopId == shopId
+            && existing().productId == productId;
+          allow create: if isValidId(shopId)
+            && isValidId(productId)
+            && isValidId(historyId)
+            && isAuthorizedShopMember()
+            && isValidSharedPriceHistory(incoming(), shopId, productId, historyId)
+            && incoming().createdBy == request.auth.uid
+            && incoming().createdAt == request.time
+            && (
+              exists(/databases/$(database)/documents/shops/$(shopId)/products/$(productId)) ||
+              existsAfter(/databases/$(database)/documents/shops/$(shopId)/products/$(productId))
+            );
+          allow update: if false;
+          allow delete: if isValidId(shopId)
+            && isValidId(productId)
+            && isValidId(historyId)
+            && isAuthorizedShopMember();
+        }
+      }
+    }
+
+    // Legacy user profile & products root (kept for seamless one-time migration)
+    match /users/{userId} {
+      allow get: if isValidId(userId) && (isOwner(userId) || isAdmin());
+      allow list: if false;
+      allow create: if isValidId(userId)
+        && isOwner(userId)
+        && isValidUserProfile(incoming(), userId)
+        && incoming().uid == request.auth.uid
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+      allow update: if isValidId(userId)
+        && isValidUserProfile(incoming(), userId)
+        && (isOwner(userId) || isAdmin())
+        && incoming().uid == existing().uid
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && (
+          isAdmin() ||
+          incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'email', 'seededDefaults', 'updatedAt'])
+        );
+      allow delete: if false;
+
+      match /products/{productId} {
+        allow get: if isValidId(userId) && isValidId(productId) && (isOwner(userId) || isAdmin());
+        allow list: if isVerifiedUser() && (
+          (request.auth.uid == userId && existing().ownerId == request.auth.uid) ||
+          isAdmin()
+        );
+        allow create: if isValidId(userId)
+          && isValidId(productId)
+          && isOwner(userId)
+          && isValidProduct(incoming(), userId, productId)
+          && incoming().ownerId == request.auth.uid
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time
+          && incoming().lastRefreshedAt == request.time
+          && exists(/databases/$(database)/documents/users/$(userId));
+        allow update: if isValidId(userId)
+          && isValidId(productId)
+          && isValidProduct(incoming(), userId, productId)
+          && (isOwner(userId) || isAdmin())
+          && incoming().id == existing().id
+          && incoming().ownerId == existing().ownerId
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedAt == request.time
+          && (
+            isAdmin() ||
+            (
+              incoming().lastRefreshedAt == request.time
+              && incoming().diff(existing()).affectedKeys().hasOnly([
+                'name', 'category', 'imageUrl', 'currentPriceToman', 'lastPriceToman',
+                'customerQuoteToman', 'stockStatus', 'lastRefreshedAt', 'updatedAt'
+              ])
+            ) ||
+            (
+              incoming().diff(existing()).affectedKeys().hasOnly([
+                'name', 'category', 'marginPercent', 'customerQuoteToman', 'notes', 'barcodes', 'updatedAt'
+              ])
+            ) ||
+            (
+              incoming().lastRefreshedAt == request.time
+              && incoming().diff(existing()).affectedKeys().hasOnly([
+                'name', 'category', 'sourceUrl', 'imageUrl', 'currentPriceToman', 'lastPriceToman',
+                'marginPercent', 'customerQuoteToman', 'stockStatus', 'warranty', 'notes', 'barcodes',
+                'lastRefreshedAt', 'updatedAt'
+              ])
+            )
+          );
+        allow delete: if isValidId(userId)
+          && isValidId(productId)
+          && (isOwner(userId) || isAdmin());
+
+        match /history/{historyId} {
+          allow get: if isValidId(userId)
+            && isValidId(productId)
+            && isValidId(historyId)
+            && (isOwner(userId) || isAdmin());
+          allow list: if isVerifiedUser() && (
+            (request.auth.uid == userId
+              && existing().ownerId == request.auth.uid
+              && existing().productId == productId) ||
+            isAdmin()
+          );
+          allow create: if isValidId(userId)
+            && isValidId(productId)
+            && isValidId(historyId)
+            && isOwner(userId)
+            && isValidPriceHistory(incoming(), userId, productId, historyId)
+            && incoming().ownerId == request.auth.uid
+            && incoming().createdAt == request.time
+            && (
+              exists(/databases/$(database)/documents/users/$(userId)/products/$(productId)) ||
+              existsAfter(/databases/$(database)/documents/users/$(userId)/products/$(productId))
+            );
+          allow update: if false;
+          allow delete: if isValidId(userId)
+            && isValidId(productId)
+            && isValidId(historyId)
+            && (isOwner(userId) || isAdmin());
+        }
+      }
+    }
+  }
+}
